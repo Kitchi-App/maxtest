@@ -109,7 +109,7 @@ p{
 }
 
 .marre {
-  padding-bottom: 1%;
+  padding-bottom: 20px;
 }
 
 .orange {
@@ -146,6 +146,36 @@ p{
 
 .blanc {
   color: #fff;
+}
+
+
+/* RESPONSIVE STYLING */
+
+@media (max-width: 1199px) {
+
+}
+
+@media (max-width: 991px) {
+  h1{
+  	font-size: 2.7em;
+    margin-top: 60px;
+  }
+
+  h2{
+    font-size: 1.9em;
+  }
+
+  p{
+  	font-size: 1.3em;
+  }
+
+  .marre {
+    padding-bottom: 13px;
+  }
+}
+
+@media (max-width: 767px) {
+
 }
 
 #menu li {
