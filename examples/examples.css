@@ -66,12 +66,17 @@ body{
 }
 
 h1{
-	font-size: 3.5em;
+	font-size: 3.7em;
+  color: #1A1A1A;
+}
+
+h2{
+  font-size: 2.5em;
   color: #1A1A1A;
 }
 
 p{
-	font-size: 2em;
+	font-size: 1.8em;
 }
 
 .intro p{
@@ -81,14 +86,66 @@ p{
 }
 
 .section{
+  width: 100%;
 	text-align:center;
 }
 
 #section0{
-  background-image: url(images/background_slide1.jpg);
+  background-image: url(images/background_landing.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.left {
+  width: 50%;
+  display: inline-block;
+}
+
+.right {
+  width: 49%;
+  display: inline-block;
+  position: top;
+}
+
+.marre {
+  padding-bottom: 1%;
+}
+
+.orange {
+  color: #d45500;
+}
+
+.right p {
+  margin: 40px;
+  color: #1A1A1A;
+}
+
+.champmail {
+  display: inline-block;
+  width: 70%;
+  text-align: center;
+  font-size: 1.5em;
+  color: grey;
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
+.lancer {
+  display: inline-block;
+  width: 70.6%;
+  height: 50px;
+  background-color: #d45500;
+  border-style: none;
+  border-radius: 3px;
+  color: #1A1A1A;
+  font-size: 2em;
+  font-family: 'Lobster';
+  margin-bottom: 15px;
+}
+
+.blanc {
+  color: #fff;
 }
 
 #menu li {
