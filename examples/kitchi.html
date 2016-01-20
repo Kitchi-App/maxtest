@@ -9,7 +9,6 @@
 	<meta name="keywords"  content="fullpage,jquery,demo,scroll,loop,continuous" />
 	<meta name="Resource-type" content="Document" />
 
-
 	<link rel="stylesheet" type="text/css" href="../jquery.fullPage.css" />
 	<link rel="stylesheet" type="text/css" href="examples.css" />
 
@@ -27,7 +26,7 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
-			  sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+			  sectionsColor: ['', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
 			  anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
 			  menu: '#menu',
 			  continuousVertical: true
@@ -46,9 +45,21 @@
 
 <div id="fullpage">
 	<div class="section " id="section0">
-		<h1>fullPage.js</h1>
-		<p>Continuous Scrolling Enabled</p>
-		<img src="images/logo_vectorielle_base_maquette.svg" alt="fullPage" />
+		<div class="left">
+			<img src="images/logo_vectorielle_base_maquette.svg" alt="Logo Kit'Chi" width="70%" height="70%" />
+			<h1>" On mange quoi<br> ce soir? "</h1>
+		</div>
+		<div class="right">
+			<h2 class="marre">Marre de se poser<br> <span class="orange">la même question</span> <br>tous les jours?</h2>
+			<p>Pas le frigo sous les yeux?</p>
+			<p>Pas d'idées pour cuisiner?</p>
+			<p>Pas le temps de faire les courses?</p>
+			<input class="champmail" type="email" name="user_email">
+			<button class="lancer" type="button" name="lancer">Lancer <span class="blanc">Kit'Chi</span> !</button>
+		</div>
+		<div class="mail">
+
+		</div>
 	</div>
 	<div class="section" id="section1">
 		<div class="intro">
