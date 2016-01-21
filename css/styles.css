@@ -14,30 +14,24 @@ body{
  font-family: 'caviar_dreamsregular';
  color: #333;
  color: rgba(0,0,0,0.5);
+ margin: 0;
+ padding: 0;
 }
 
 h1{
- font-size: 3.7em;
+ font-size: 2em;
  color: #1A1A1A;
-}
-
-h2{
- font-size: 2.5em;
- color: #1A1A1A;
+ margin-top: 15px;
 }
 
 p{
+ margin: 0;
  font-size: 1.8em;
-}
-
-.intro p{
- width: 50%;
- margin: 0 auto;
- font-size: 1.5em;
 }
 
 .section{
  width: 100%;
+ height: 100%;
  text-align:center;
 }
 
@@ -51,25 +45,47 @@ p{
 .left {
  width: 50%;
  display: inline-block;
+ vertical-align: middle;
+ padding-bottom: 70px;
+ margin: auto;
+}
+
+.left img {
+  padding-top: 50px;
 }
 
 .right {
- width: 49%;
+ width: 45%;
  display: inline-block;
- position: top;
+ vertical-align: middle;
+ background: url(../images/couverts.png) no-repeat;
+ background-size: 100% 100%;
+ background-position: center;
+ margin: 20px;
 }
 
 .marre {
- padding-bottom: 20px;
+ font-size: 1.7em;
+ color: #1A1A1A;
+ padding-bottom: 30px;
 }
 
 .orange {
- color: #d45500;
+ color: #FF5125;
+}
+
+.opensymbol {
+  font-family: 'OpenSymbol';
 }
 
 .right p {
- margin: 40px;
  color: #1A1A1A;
+}
+
+.transfo {
+ font-size: 1.7em;
+ color: #1A1A1A;
+ padding-top: 30px;
 }
 
 .champmail {
@@ -77,24 +93,101 @@ p{
  width: 70%;
  text-align: center;
  font-size: 1.5em;
- color: grey;
- margin-top: 25px;
- margin-bottom: 5px;
+ color: #353535;
 }
 
-.lancer {
+.lancez {
  display: inline-block;
  width: 70.6%;
  height: 50px;
- background-color: #d45500;
+ background-color: #FF5125;
  border-style: none;
  border-radius: 3px;
  color: #1A1A1A;
  font-size: 2em;
  font-family: 'Lobster';
- margin-bottom: 15px;
 }
 
 .blanc {
  color: #fff;
+}
+
+/* RESPONSIVE STYLING */
+
+@media (max-width: 1199px) {
+
+}
+
+@media (max-width: 991px) {
+  h1 {
+    font-size: 1.5em;
+  }
+  .right {
+    margin: 0;
+    background-size: 80% 80%;
+    background-position: center;
+  }
+  .left {
+    margin: 0;
+  }
+  .marre {
+    font-size: 1.3em;
+  }
+  .right p {
+    font-size: 1.2em;
+  }
+  .transfo {
+    font-size: 1.2em;
+  }
+  .champmail {
+   width: 50%;
+   font-size: 1em;
+  }
+  .lancez {
+   width: 51%;
+   height: 50px;
+   font-size: 1.5em;
+  }
+}
+
+@media (max-width: 767px) {
+  #section0{
+    background: none;
+  }
+  .left {
+    width: 100%;
+    display: block;
+    margin: auto;
+    background: url(../images/background_slide1.jpg) no-repeat;
+    background-position: cover;
+    background-size: 100% 100%;
+  }
+  .right {
+    width: 70%;
+    display: block;
+    margin: auto;
+    background-size: 100% 100%;
+    background-position: center;
+  }
+  .marre {
+    font-size: 1.3em;
+    margin-top: 40px;
+  }
+  .right p {
+    font-size: 1.2em;
+  }
+  .transfo {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+  }
+  .champmail {
+   width: 80%;
+   font-size: 1em;
+  }
+  .lancez {
+   width: 81%;
+   height: 50px;
+   font-size: 1.5em;
+   margin-bottom: 40px;
+  }
 }
