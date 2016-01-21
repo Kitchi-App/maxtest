@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
 
@@ -27,7 +28,7 @@
         <p>Pas d'idées pour cuisiner ?</p>
         <p>Pas le temps de faire les courses ?</p>
         <h2 class="transfo">Transformez n'importe quelle cuisine en <span class="orange">cuisine connectée</span>, grâce à votre smartphone <span class="opensymbol">!</span></h2>
-        <input class="champmail" type="email" name="user_email" placeholder="monadresse@mail.com">
+        <input type="email" name="EMAIL" placeholder="monadresse@mail.com" class="required email champmail" id="mce-EMAIL">
         <button class="lancez" type="button" name="lancez">Lancez <span class="blanc">Kit'Chi</span> !</button>
       </div>
     </div>
@@ -48,5 +49,20 @@
   <footer>
   </footer>
 
+  <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+  <script type='text/javascript'>
+    (function($) {
+      window.fnames = new Array();
+      window.ftypes = new Array();
+      fnames[0] = 'EMAIL';
+      ftypes[0] = 'email';
+      fnames[1] = 'FNAME';
+      ftypes[1] = 'text';
+      fnames[2] = 'LNAME';
+      ftypes[2] = 'text';
+    }(jQuery));
+    var $mcj = jQuery.noConflict(true);
+  </script>
 </body>
+
 </html>
